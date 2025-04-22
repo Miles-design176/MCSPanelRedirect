@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/",
-      "destination": "http://panel.bestwebsite.ca:12345",
+      "destination": "http://panel.bestwebsite.ca:41357",
       "permanent": true
     }
   ]
