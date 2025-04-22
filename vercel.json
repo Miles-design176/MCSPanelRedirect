@@ -1,9 +1,0 @@
-{
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "http://mcs.bestwebsite.ca:41357",
-      "permanent": true
-    }
-  ]
-}
