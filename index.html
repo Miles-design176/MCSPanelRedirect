@@ -40,21 +40,44 @@
       letter-spacing: 2px;
     }
 
+    .redirect-button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .redirect-button:hover {
+      background-color: #2980b9;
+    }
+
     @keyframes spin {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
     }
   </style>
   <script>
+    const redirectUrl = "http://mcs.bestwebsite.ca:41357";
+
     setTimeout(function() {
-      window.location.replace("http://mcs.bestwebsite.ca:41357");
-    }, 500); // 500ms (0.5s) delay before redirect
+      window.location.replace(redirectUrl);
+    }, 500); // 500ms delay
+
+    function manualRedirect() {
+      window.location.href = redirectUrl;
+    }
   </script>
 </head>
 <body>
   <div class="loading-container">
     <div class="spinner"></div>
     <h1>Redirecting to Minecraft Panel...</h1>
+    <button class="redirect-button" onclick="manualRedirect()">Click to Redirect</button>
   </div>
 </body>
 </html>
