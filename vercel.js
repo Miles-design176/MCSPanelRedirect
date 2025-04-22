@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/",
-      "destination": "http://panel.bestwebsite.ca:12345",
+      "destination": "http://mcspanel.bestwebsite.ca:12345",
       "permanent": true
     }
   ]
